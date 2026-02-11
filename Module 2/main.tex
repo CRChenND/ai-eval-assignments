@@ -1,0 +1,110 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{AI eval M2 assignment}
+\author{Chaoran Chen}
+\date{February 2026}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+Large language models (LLMs) are increasingly deployed in high-stakes decision-making and engineering planning tasks. Despite strong reasoning and language capabilities, LLMs remain susceptible to hallucinations—confidently generated but factually incorrect or scientifically implausible outputs. Hallucinations become particularly problematic in multi-stage, cross-domain engineering problems, where errors may propagate across interdependent constraints and produce technically infeasible system designs.
+
+This assignment investigates how different inference strategies influence hallucination rates and factual reliability in LLM-generated engineering plans. Specifically, we evaluate model performance under a hypothetical yet scientifically constrained deployment scenario: operating an 8-GPU large language model server on the Martian surface. The scenario intentionally integrates multiple technical domains, including thermodynamics, power systems engineering, orbital logistics, and distributed software deployment, thereby creating a realistic stress test for model reliability.
+
+Rather than evaluating solution correctness alone, this study focuses on auditing model reasoning failures across inference strategies. We compare five distinct inference approaches, including zero-shot prompting, chain-of-thought reasoning, prompt iteration, reasoning-specialized models, and tool-augmented agentic inference. We then conduct a systematic factual audit by comparing generated outputs against established scientific and engineering constraints.
+
+The contributions of this study are threefold:
+
+\begin{itemize}
+\item A structured evaluation framework for measuring hallucinations in multi-domain engineering planning tasks.
+\item A comparative analysis of inference strategies and their impact on factual integrity.
+\item A scientifically grounded deployment plan derived from the most reliable inference strategy.
+\end{itemize}
+
+
+\section{Deployment Scenario and Task Definition}
+
+We consider a hypothetical deployment scenario in which a large language model must be operated locally on a high-performance computing system located on the Martian equatorial surface. The system consists of an 8-GPU NVIDIA server installed in a standard rack configuration.
+
+Participants are tasked with generating a technical deployment plan that addresses the following stages:
+
+\begin{itemize}
+\item Transportation and landing of the hardware infrastructure on Mars.
+\item Power system design capable of sustaining continuous server operation.
+\item Thermal management and environmental adaptation within the Martian atmosphere.
+\item Software deployment and operational orchestration of the LLM infrastructure.
+\end{itemize}
+
+This scenario requires coordination across several engineering domains, including power electronics, thermal physics, planetary environmental science, and distributed computing systems. The complexity of cross-domain constraints makes this task particularly suitable for evaluating hallucination behaviors in LLM-generated outputs.
+
+The primary objective is not to produce a perfect engineering solution but to evaluate the reliability of model-generated reasoning under different inference strategies.
+
+
+\section{Inference Strategy Comparison}
+
+To evaluate the impact of inference design on model reliability, we compare five inference strategies that represent distinct prompting and reasoning paradigms.
+
+\subsection{Zero-Shot Prompting}
+
+Zero-shot prompting involves directly querying the model with the deployment task without providing structured reasoning guidance. This baseline captures default model behavior under minimal prompt engineering.
+
+\subsection{Chain-of-Thought Reasoning}
+
+Chain-of-thought (CoT) prompting encourages the model to explicitly decompose the problem into intermediate reasoning steps. Prior work suggests that CoT prompting can improve logical consistency in complex problem-solving tasks.
+
+\subsection{Prompt Iteration}
+
+Prompt iteration involves repeated or refined prompt queries to assess the stability and variance of model outputs. This approach evaluates whether hallucination patterns persist across multiple generations.
+
+\subsection{Reasoning-Optimized Models}
+
+We evaluate specialized reasoning-oriented model variants designed for complex analytical tasks. These models often incorporate architectural or training modifications intended to enhance multi-step reasoning.
+
+\subsection{Agentic Tool-Augmented Inference}
+
+Agentic inference integrates external knowledge retrieval or tool-calling mechanisms. This approach allows the model to verify environmental data, such as Martian solar irradiance or atmospheric conditions, thereby potentially reducing hallucinations.
+
+\section{Evaluation Methodology}
+
+\subsection{Factuality Auditing}
+
+We perform a systematic factual audit by cross-referencing model-generated technical claims with established scientific datasets and engineering references. Evaluation focuses on three primary constraint categories:
+
+\textbf{Power Feasibility:} Assessment of whether proposed energy sources can realistically sustain 8-GPU server operation under Martian environmental conditions.
+
+\textbf{Environmental Physics:} Evaluation of thermal management strategies and their compatibility with Martian atmospheric properties.
+
+\textbf{Deployment Validity:} Verification of software deployment workflows and system orchestration feasibility.
+
+\subsection{Hallucination Detection}
+
+Hallucinations are identified when generated outputs contain scientifically unsupported, physically implausible, or internally inconsistent claims.
+
+\subsection{Quantitative Metrics}
+
+We evaluate inference strategies using:
+
+\begin{itemize}
+\item Hallucination rate (percentage of incorrect technical claims)
+\item Constraint violation count
+\item Internal logical consistency score
+\item Cross-run output variance
+\end{itemize}
+
+\section{Hallucination Taxonomy}
+
+To systematically characterize reasoning failures, we categorize hallucinations into four types:
+
+\textbf{Scientific Hallucinations:} Violations of known physical or engineering laws.
+
+\textbf{Numerical Hallucinations:} Incorrect quantitative estimates such as power consumption or thermal load.
+
+\textbf{Procedural Hallucinations:} Invalid or incomplete deployment workflows.
+
+\textbf{Cross-Domain Inconsistencies:} Conflicts between constraints across engineering domains.
+
+\end{document}

@@ -1,0 +1,23 @@
+Assignment: Evaluating Model Hallucination via Diverse Inference Strategies
+Overview
+This assignment asks you to navigate a complex, hypothetical deployment scenario: evaluate how different inference strategies impact the factuality and hallucination rates of Large Language Models (LLMs) when solving multi-stage logistical and engineering problems.
+
+I: The Deployment Scenario
+Objective The primary goal of this research assignment is to assess the factual integrity and hallucination rates of LLMs (e.g., Qwen model family) when subjected to high-stakes, multi-domain engineering problems. You will investigate how varied inference architectures influence the model’s ability to maintain "ground truth" in a hypothetical yet scientifically constrained scenario: the deployment of high-performance computing infrastructure on the Martian surface.
+The Research Scenario Participants must develop a rigorous technical plan for the successful transportation, power-up, and local deployment of a large language model on an 8-GPU NVIDIA server (installed in a rack) located at a Martian equatorial site. This problem requires to synchronize knowledge across thermodynamics, orbital mechanics, power electronics, and software engineering. Your task is not merely to find a solution, but to audit the model's cognitive failures—hallucinations—as it attempts to navigate these constraints.
+
+II: Inference Strategy Testing
+To determine the most reliable deployment plan, you must compare the outputs of the model across five distinct inference strategies. Here are some example strategies that you can try:
+Standard Zero-Shot Prompting: Direct query without additional structural guidance.
+Thinking or Chain-of-Thought (CoT): Encouraging the model to break down the Martian logistics into step-by-step reasoning.
+Prompt Iteration (Repeat Prompting): Using refined or repeated prompts to observe consistency and variance in the model's technical suggestions.
+Reasoning-Focused Models: Utilizing specialized "reasoning" versions of the model (e.g., Qwen-7B-Chat or specialized math/logic variants) designed for complex problem-solving.
+Agentic Deep Research (Tool-Use): Deploying a model with "DeepSearch" capabilities, allowing it to simulate tool-calling or external knowledge retrieval to verify Martian environmental data.
+
+III: Fact-Checking and Evaluation
+Evaluation and Factuality Detection Following the generation phase, you must perform a comprehensive factuality audit. This involves cross-referencing every technical claim made by the model—such as the wattage required for 8-GPU operation versus Martian solar flux, or the cooling capacity of the Martian atmosphere—against established scientific datasets. You will evaluate the model's output against known scientific and engineering constraints, such as:
+Power Requirements: Are the proposed energy sources (solar, RTG, etc.) sufficient for 8-GPU power draws?
+Environmental Physics: Are the thermal management solutions realistic for the Martian atmosphere?
+Deployment Feasibility: Is the technical process for deploying LLMs on the local hardware scientifically sound?
+
+Submission Requirements. Please submit a technical report (max 10 pages). The final deliverable is a formal technical report that synthesizes your findings. The report must include a comparative analysis of the five inference strategies, a categorized log of detected hallucinations, and a final "Optimal Deployment Plan" derived from the strategy that demonstrated the highest semantic accuracy and lowest hallucination rate. This plan must represent the most scientifically viable path for running an 8-GPU server on Mars.
