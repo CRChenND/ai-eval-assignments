@@ -3,7 +3,11 @@
 ## 0) Setup
 
 ```bash
-export OPENROUTER_API_KEY="your_key"
+cd "/Users/chaoranchen/Documents/GitHub/ai-eval-assignments"
+set -a
+source .env
+set +a
+
 cd "Module 2"
 uv sync
 ```
@@ -46,6 +50,32 @@ Optional overrides:
 ITER_RUNS=3 REASON_MODEL="qwen/qwen3-32b" ./run_all.sh
 SKIP_SYNC=1 ./run_all.sh
 ```
+
+## Re-run specific strategies with higher token budget
+
+```bash
+set -a; source ../.env; set +a
+uv run python generate_zero_shot.py --model "qwen/qwen3-32b" --max-tokens 4000
+uv run python generate_cot.py --model "qwen/qwen3-32b" --max-tokens 4000
+```
+
+Then refresh metrics/plots:
+
+```bash
+uv run python extract_claims.py
+uv run python fact_check.py
+uv run python analyze_results.py
+uv run python plot_results.py
+```
+
+## Update report after rerun
+
+The report source is `main.tex`. Update strategy tables and conclusions using:
+
+- `results/analysis/metrics.json`
+- `results/fact_check/fact_check.json`
+- `results/raw/*.json` (coverage / truncation status)
+- `results/plots/*.png`
 
 ## Output structure
 
