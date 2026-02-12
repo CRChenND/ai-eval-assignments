@@ -1,0 +1,24 @@
+{
+  "references": {
+    "mars_solar_irradiance_w_m2": {
+      "typical_range": [490, 590],
+      "note": "Top-of-atmosphere approximate range near Mars orbit."
+    },
+    "surface_noon_insolation_equator_w_m2": {
+      "typical_range": [200, 450],
+      "note": "Order-of-magnitude daytime surface value, affected by atmosphere and dust."
+    },
+    "mars_average_surface_pressure_pa": {
+      "typical_range": [600, 900],
+      "note": "Approximate pressure range at representative elevations."
+    },
+    "mars_mean_surface_temp_c": {
+      "typical_range": [-65, -55],
+      "note": "Global mean; local and seasonal variation is large."
+    },
+    "rack_8gpu_server_power_kw": {
+      "typical_range": [2.5, 6.5],
+      "note": "Depends on GPU class, CPU, cooling, utilization."
+    }
+  }
+}

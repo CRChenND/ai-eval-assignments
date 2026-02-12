@@ -1,0 +1,61 @@
+{
+  "metrics": {
+    "chain_of_thought": {
+      "num_claims": 44,
+      "num_known_claims": 21,
+      "num_hallucinated_claims": 20,
+      "hallucination_rate": 0.9523809523809523,
+      "consistency": 1.0,
+      "variance": 0.0,
+      "run_rates": [
+        0.9523809523809523
+      ]
+    },
+    "prompt_iteration": {
+      "num_claims": 146,
+      "num_known_claims": 71,
+      "num_hallucinated_claims": 67,
+      "hallucination_rate": 0.9436619718309859,
+      "consistency": 0.9583333333333333,
+      "variance": 0.041666666666666685,
+      "run_rates": [
+        1.0,
+        0.9583333333333334,
+        0.9166666666666666
+      ]
+    },
+    "reasoning_model": {
+      "num_claims": 46,
+      "num_known_claims": 22,
+      "num_hallucinated_claims": 22,
+      "hallucination_rate": 1.0,
+      "consistency": 1.0,
+      "variance": 0.0,
+      "run_rates": [
+        1.0
+      ]
+    },
+    "tool_augmented": {
+      "num_claims": 16,
+      "num_known_claims": 8,
+      "num_hallucinated_claims": 7,
+      "hallucination_rate": 0.875,
+      "consistency": 1.0,
+      "variance": 0.0,
+      "run_rates": [
+        0.875
+      ]
+    },
+    "zero_shot": {
+      "num_claims": 58,
+      "num_known_claims": 23,
+      "num_hallucinated_claims": 23,
+      "hallucination_rate": 1.0,
+      "consistency": 1.0,
+      "variance": 0.0,
+      "run_rates": [
+        1.0
+      ]
+    }
+  }
+}

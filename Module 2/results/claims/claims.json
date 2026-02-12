@@ -1,0 +1,4645 @@
+{
+  "claims": [
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "other",
+      "text": "**Section A: Key Assumptions**  \n1.",
+      "numbers": [
+        {
+          "value": 1.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "other",
+      "text": "**Martian Environment**:  \n   - Surface pressure: 600 Pa (CO₂-dominated atmosphere).",
+      "numbers": [
+        {
+          "value": 600.0,
+          "unit": "Pa"
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "- Temperature range: -125°C to 20°C (average -60°C).",
+      "numbers": [
+        {
+          "value": -125.0,
+          "unit": "°C"
+        },
+        {
+          "value": 20.0,
+          "unit": "°C"
+        },
+        {
+          "value": -60.0,
+          "unit": "°C"
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "power",
+      "text": "- Solar insolation: 270 W/m² at equator (44% of Earth).",
+      "numbers": [
+        {
+          "value": 270.0,
+          "unit": "W"
+        },
+        {
+          "value": 44.0,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "other",
+      "text": "- Dust storms: Occasional global events reducing insolation by 90% for weeks.",
+      "numbers": [
+        {
+          "value": 90.0,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "other",
+      "text": "2.",
+      "numbers": [
+        {
+          "value": 2.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "power",
+      "text": "**Server Specifications**:  \n   - 8 × NVIDIA H100 GPUs (300 W each, 2.4 kW total).",
+      "numbers": [
+        {
+          "value": 8.0,
+          "unit": ""
+        },
+        {
+          "value": 100.0,
+          "unit": ""
+        },
+        {
+          "value": 300.0,
+          "unit": "W"
+        },
+        {
+          "value": 2.4,
+          "unit": "kW"
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "- Operating temperature: 0°C to 40°C (requires active thermal management).",
+      "numbers": [
+        {
+          "value": 0.0,
+          "unit": "°C"
+        },
+        {
+          "value": 40.0,
+          "unit": "°C"
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "power",
+      "text": "- Continuous operation assumed (no power-down modes).",
+      "numbers": []
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "other",
+      "text": "3.",
+      "numbers": [
+        {
+          "value": 3.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "**Transport**:  \n   - Lander based on NASA’s Perseverance design (sky crane, retrorockets).",
+      "numbers": []
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "other",
+      "text": "- Server enclosed in crushable honeycomb for shock absorption (≤50 Gs).",
+      "numbers": [
+        {
+          "value": 50.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "other",
+      "text": "4.",
+      "numbers": [
+        {
+          "value": 4.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "power",
+      "text": "**Power**:  \n   - Solar arrays (30% efficiency) + lithium-ion batteries (180 Wh/kg).",
+      "numbers": [
+        {
+          "value": 30.0,
+          "unit": "%"
+        },
+        {
+          "value": 180.0,
+          "unit": "W"
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "power",
+      "text": "- No nuclear power due to mass/mission constraints.",
+      "numbers": []
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "other",
+      "text": "5.",
+      "numbers": [
+        {
+          "value": 5.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "**Thermal Management**:  \n   - Radiators (emissivity 0.9) for heat rejection.",
+      "numbers": [
+        {
+          "value": 0.9,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "- No liquid cooling (no water available).",
+      "numbers": []
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "---\n\n**Section B: Step-by-Step Deployment Plan**  \n1.",
+      "numbers": [
+        {
+          "value": 1.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "**Transport**:  \n   - Launch server in a pressurized, thermally insulated container aboard a heavy-lift rocket (e.g., Starship).",
+      "numbers": []
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "- Use Mars Science Laboratory (MSL)-class lander with sky crane for precision deployment.",
+      "numbers": []
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "other",
+      "text": "2.",
+      "numbers": [
+        {
+          "value": 2.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "**Landing**:  \n   - Deploy parachutes at 10 km altitude, retro-rockets for final descent.",
+      "numbers": [
+        {
+          "value": 10.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "power",
+      "text": "- Server lands on a crushable base, triggering autonomous deployment of solar arrays and radiators.",
+      "numbers": []
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "other",
+      "text": "3.",
+      "numbers": [
+        {
+          "value": 3.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "power",
+      "text": "**Power Initialization**:  \n   - Unfold 300 m² solar arrays (mass ~600 kg).",
+      "numbers": [
+        {
+          "value": 300.0,
+          "unit": ""
+        },
+        {
+          "value": 600.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "power",
+      "text": "- Charge 2,000 kWh battery bank (mass ~11,111 kg) during initial 12-hour sol day.",
+      "numbers": [
+        {
+          "value": 2.0,
+          "unit": ""
+        },
+        {
+          "value": 0.0,
+          "unit": "kW"
+        },
+        {
+          "value": 11.0,
+          "unit": ""
+        },
+        {
+          "value": 111.0,
+          "unit": ""
+        },
+        {
+          "value": 12.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "other",
+      "text": "4.",
+      "numbers": [
+        {
+          "value": 4.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "power",
+      "text": "**Thermal Setup**:  \n   - Deploy 10 m² radiators (mass 50 kg) to reject 2.4 kW heat.",
+      "numbers": [
+        {
+          "value": 10.0,
+          "unit": ""
+        },
+        {
+          "value": 50.0,
+          "unit": ""
+        },
+        {
+          "value": 2.4,
+          "unit": "kW"
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "other",
+      "text": "5.",
+      "numbers": [
+        {
+          "value": 5.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "**Software Deployment**:  \n   - Pre-load OS and AI workloads during Earth-based testing.",
+      "numbers": []
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "other",
+      "text": "- Use autonomous PXE boot via onboard storage; no real-time updates due to 22-minute communication delay.",
+      "numbers": [
+        {
+          "value": 22.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "other",
+      "text": "---\n\n**Section C: Quantitative Estimates**  \n1.",
+      "numbers": [
+        {
+          "value": 1.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "power",
+      "text": "**Power System**:  \n   - Solar array area: **300 m²** (to generate 2.4 kW at 270 W/m² × 30% efficiency).",
+      "numbers": [
+        {
+          "value": 300.0,
+          "unit": ""
+        },
+        {
+          "value": 2.4,
+          "unit": "kW"
+        },
+        {
+          "value": 270.0,
+          "unit": "W"
+        },
+        {
+          "value": 30.0,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "power",
+      "text": "- Battery capacity: **2,000 kWh** (to sustain 2.4 kW for 833 hours; covers 35 sols of night or moderate dust storms).",
+      "numbers": [
+        {
+          "value": 2.0,
+          "unit": ""
+        },
+        {
+          "value": 0.0,
+          "unit": "kW"
+        },
+        {
+          "value": 2.4,
+          "unit": "kW"
+        },
+        {
+          "value": 833.0,
+          "unit": ""
+        },
+        {
+          "value": 35.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "power",
+      "text": "- Mass: **~11,700 kg** (solar arrays + batteries).",
+      "numbers": [
+        {
+          "value": 11.0,
+          "unit": ""
+        },
+        {
+          "value": 700.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "other",
+      "text": "2.",
+      "numbers": [
+        {
+          "value": 2.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "power",
+      "text": "**Thermal Management**:  \n   - Radiator area: **10 m²** (radiates 2.4 kW at ΔT = 298 K (server) – 193 K (ambient) using Stefan-Boltzmann law).",
+      "numbers": [
+        {
+          "value": 10.0,
+          "unit": ""
+        },
+        {
+          "value": 2.4,
+          "unit": "kW"
+        },
+        {
+          "value": 298.0,
+          "unit": ""
+        },
+        {
+          "value": 193.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "power",
+      "text": "- Heat rejection capacity: **~2.7 kW** (safety margin for transient loads).",
+      "numbers": [
+        {
+          "value": 2.7,
+          "unit": "kW"
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "other",
+      "text": "3.",
+      "numbers": [
+        {
+          "value": 3.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "power",
+      "text": "**Transport**:  \n   - Lander mass: **~15,000 kg** (server, power, thermal systems, structure, and fuel).",
+      "numbers": [
+        {
+          "value": 15.0,
+          "unit": ""
+        },
+        {
+          "value": 0.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "other",
+      "text": "- Launch vehicle: **Starship** (payload capacity >15,000 kg to Mars).",
+      "numbers": [
+        {
+          "value": 15.0,
+          "unit": ""
+        },
+        {
+          "value": 0.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "other",
+      "text": "---\n\n**Section D: Failure Modes and Mitigations**  \n1.",
+      "numbers": [
+        {
+          "value": 1.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "chain_of_thought",
+      "run_id": 1,
+      "type": "power",
+      "text": "**Dust Storms**:  \n   - **Risk**: Solar insolation drops to 10%, reducing power to 72 W (from 300 m² arrays).",
+      "numbers": [
+        {
+          "value": 10.0,
+          "unit": "%"
+        },
+        {
+          "value": 72.0,
+          "unit": "W"
+        },
+        {
+          "value": 300.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "# **Technical Plan for Deployment of 8-GPU NVIDIA Server Rack on Mars**\n\n---\n\n## **Section A: Key Assumptions**\n\n1.",
+      "numbers": [
+        {
+          "value": 8.0,
+          "unit": ""
+        },
+        {
+          "value": 1.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "**Mission Timeline**: Deployment occurs during the Martian day (sol), with a 24-hour sol cycle.",
+      "numbers": [
+        {
+          "value": 24.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "other",
+      "text": "2.",
+      "numbers": [
+        {
+          "value": 2.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "**Atmospheric Conditions**: Martian surface pressure ~600 Pa, CO₂-dominated atmosphere, average temperature ~-60°C, with diurnal variation up to ±100°C.",
+      "numbers": [
+        {
+          "value": 600.0,
+          "unit": "Pa"
+        },
+        {
+          "value": -60.0,
+          "unit": "°C"
+        },
+        {
+          "value": 100.0,
+          "unit": "°C"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "other",
+      "text": "3.",
+      "numbers": [
+        {
+          "value": 3.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "power",
+      "text": "**Power Source**: Solar arrays with battery storage (lithium-ion or advanced Li-SOCl₂) for continuous operation during dust storms and night.",
+      "numbers": []
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "other",
+      "text": "4.",
+      "numbers": [
+        {
+          "value": 4.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "**Thermal Management**: Active cooling using phase-change materials (PCMs) and heat pipes; passive insulation for cold periods.",
+      "numbers": []
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "other",
+      "text": "5.",
+      "numbers": [
+        {
+          "value": 5.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "other",
+      "text": "**Communication**: Relayed via Mars orbiters to Earth, with latency ~4–24 minutes one-way.",
+      "numbers": [
+        {
+          "value": 4.0,
+          "unit": ""
+        },
+        {
+          "value": 24.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "other",
+      "text": "6.",
+      "numbers": [
+        {
+          "value": 6.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "**Software**: Pre-deployed AI/ML models for autonomous operation, with remote updates via secure channels.",
+      "numbers": []
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "other",
+      "text": "7.",
+      "numbers": [
+        {
+          "value": 7.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "**Transport**: Server rack is transported in a pressurized, radiation-shielded container within a lander module.",
+      "numbers": []
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "other",
+      "text": "8.",
+      "numbers": [
+        {
+          "value": 8.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "power",
+      "text": "**GPU Configuration**: 8 x NVIDIA H100 or A100 GPUs, each with ~300W TDP, totaling ~2.4kW nominal power.",
+      "numbers": [
+        {
+          "value": 8.0,
+          "unit": ""
+        },
+        {
+          "value": 100.0,
+          "unit": ""
+        },
+        {
+          "value": 100.0,
+          "unit": ""
+        },
+        {
+          "value": 300.0,
+          "unit": "W"
+        },
+        {
+          "value": 2.4,
+          "unit": "kW"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "other",
+      "text": "9.",
+      "numbers": [
+        {
+          "value": 9.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "**Landing Site**: Equatorial region (e.g., Arcadia Planitia), with relatively flat terrain and minimal dust accumulation.",
+      "numbers": []
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "other",
+      "text": "10.",
+      "numbers": [
+        {
+          "value": 10.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "other",
+      "text": "**Mission Duration**: Minimum 1 Martian year (687 Earth days), with potential for extension.",
+      "numbers": [
+        {
+          "value": 1.0,
+          "unit": ""
+        },
+        {
+          "value": 687.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "---\n\n## **Section B: Step-by-Step Deployment Plan**\n\n### **1.",
+      "numbers": [
+        {
+          "value": 1.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "Transport and Landing Sequence**\n\n- **Launch from Earth**: Server rack is integrated into a lander module (e.g., based on NASA’s Mars 2020 Perseverance design).",
+      "numbers": [
+        {
+          "value": 2020.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "power",
+      "text": "- **Cruise Phase**: Server rack is in stasis, powered off, with minimal thermal control.",
+      "numbers": []
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "- **Entry, Descent, and Landing (EDL)**:\n  - Entry: Heat shield protects from atmospheric entry.",
+      "numbers": []
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "- Parachute deployment at ~10 km altitude.",
+      "numbers": [
+        {
+          "value": 10.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "power",
+      "text": "- Powered descent using retro-rockets to ~20 m altitude.",
+      "numbers": [
+        {
+          "value": 20.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "- Sky crane-style deployment of lander module to surface.",
+      "numbers": []
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "power",
+      "text": "- **Post-Landing Deployment**:\n  - Lander unfolds solar arrays and antenna.",
+      "numbers": []
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "power",
+      "text": "- Server rack is unsealed and powered on via pre-programmed sequence.",
+      "numbers": []
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "other",
+      "text": "### **2.",
+      "numbers": [
+        {
+          "value": 2.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "power",
+      "text": "Power System Sizing for Continuous Operation**\n\n- **Power Requirements**:\n  - 8 x GPU @ 300W = 2,400W\n  - Server rack (motherboard, storage, cooling, etc.) = ~500W\n  - Total = ~2,900W continuous\n- **Power Generation**:\n  - Solar arrays: 3 x 2 m² panels, 30% efficiency = ~5.4kW peak\n  - Average Martian solar irradiance: ~590 W/m²\n  - Average power generation: ~3.5kW\n- **Storage**:\n  - Lithium-ion battery bank: 10 kWh capacity (200Ah @ 50V)\n  - Sufficient to power system for ~3.5 hours during night or dust storm\n- **Power Management**:\n  - Smart load shedding during low solar periods\n  - GPU throttling to reduce power draw if necessary\n\n### **3.",
+      "numbers": [
+        {
+          "value": 8.0,
+          "unit": ""
+        },
+        {
+          "value": 300.0,
+          "unit": "W"
+        },
+        {
+          "value": 2.0,
+          "unit": ""
+        },
+        {
+          "value": 400.0,
+          "unit": "W"
+        },
+        {
+          "value": 500.0,
+          "unit": "W"
+        },
+        {
+          "value": 2.0,
+          "unit": ""
+        },
+        {
+          "value": 900.0,
+          "unit": "W"
+        },
+        {
+          "value": 3.0,
+          "unit": ""
+        },
+        {
+          "value": 2.0,
+          "unit": ""
+        },
+        {
+          "value": 30.0,
+          "unit": "%"
+        },
+        {
+          "value": 5.4,
+          "unit": "kW"
+        },
+        {
+          "value": 590.0,
+          "unit": "W"
+        },
+        {
+          "value": 3.5,
+          "unit": "kW"
+        },
+        {
+          "value": 10.0,
+          "unit": "kW"
+        },
+        {
+          "value": 200.0,
+          "unit": ""
+        },
+        {
+          "value": 50.0,
+          "unit": ""
+        },
+        {
+          "value": 3.5,
+          "unit": ""
+        },
+        {
+          "value": 3.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "Thermal Management Under Martian Atmosphere**\n\n- **Ambient Conditions**:\n  - Diurnal temperature range: -125°C to +20°C\n  - Average: -60°C\n- **Thermal Strategy**:\n  - **Passive Insulation**: Multi-layer insulation (MLI) to minimize heat loss\n  - **Active Cooling**:\n    - Heat pipes to transfer heat from GPUs to radiators\n    - Radiators mounted on top of lander for maximum exposure to cold Martian sky\n    - Phase-change materials (PCMs) to absorb and release heat during temperature swings\n  - **Thermal Control System (TCS)**:\n    - Temperature sensors on each GPU and system component\n    - Feedback control to adjust fan speed and heat pipe flow\n    - Minimum GPU operating temperature: -40°C (NVIDIA H100/A100 spec)\n\n### **4.",
+      "numbers": [
+        {
+          "value": -125.0,
+          "unit": "°C"
+        },
+        {
+          "value": 20.0,
+          "unit": "°C"
+        },
+        {
+          "value": -60.0,
+          "unit": "°C"
+        },
+        {
+          "value": -40.0,
+          "unit": "°C"
+        },
+        {
+          "value": 100.0,
+          "unit": ""
+        },
+        {
+          "value": 100.0,
+          "unit": ""
+        },
+        {
+          "value": 4.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "Software Deployment and Operations**\n\n- **Pre-Deployment**:\n  - AI/ML models preloaded onto server (e.g., for terrain analysis, data compression, or autonomous decision-making)\n  - Operating system: Linux-based, hardened for space environments\n- **Post-Landing**:\n  - Boot sequence initiated via onboard timer\n  - Self-diagnostic and health check\n  - Establish communication with Mars relay (e.g., Mars Reconnaissance Orbiter)\n- **Operations**:\n  - Remote command and control via Earth (with latency compensation)\n  - Data stored locally and transmitted in batches\n  - Software updates via secure, encrypted channels\n  - Autonomous fallback modes for communication loss\n\n### **5.",
+      "numbers": [
+        {
+          "value": 5.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 1,
+      "type": "power",
+      "text": "Risks, Mitigations, and Fallback Modes**\n\n- **Risk 1**: Dust accumulation on solar panels\n  - **Mitigation**: Self-cleaning panels (e.g., electrostatic or vibration-based)\n  - **Fallback**: Power conservation mode (GPU throttling)\n\n- **Risk 2**: Communication latency or loss\n  - **Mitigation**: Local AI decision-making with pre-programmed autonomy\n  - **Fallback**: Store-and-forward data transmission\n\n- **Risk 3**: Thermal failure due to extreme cold\n  - **Mitigation**: Redundant heating elements and PCM thermal buffers\n  - **Fallback**: GPU shutdown and system hibernation\n\n- **Risk 4**: Power system failure\n  - **Mitigation**: Redundant solar arrays and battery banks\n  - **Fallback**: Minimum power mode (CPU-only operation)\n\n- **Risk 5**: Mechanical failure during deployment\n  - **Mitigation**: Redundant deployment mechanisms and pre-flight testing\n  - **Fallback**: Manual override via remote command (if possible)\n\n---\n\n## **Section C: Quantitative Estimates**\n\n| Parameter | Value | Units |\n|----------|-------|-------|\n| Total GPU power | 2,400 | W |\n| Server rack power (total) | 2,900 | W |\n| Solar array peak power | 5,400 | W |\n| Average solar power | 3,500 | W |\n| Battery capacity | 10 | kWh |\n| Battery discharge rate (continuous) | 2,900 | W |\n| Battery endurance (no solar) | 3.45 | hours |\n| GPU operating temperature range | -40 to +85 | °C |\n| Martian ambient temperature range | -125 to +20 | °C |\n| GPU thermal dissipation | 300 | W/unit |\n| Thermal buffer (PCM) | 5 | kWh |\n| Communication latency (Earth-Mars) | 4–24 | minutes |\n| Mission duration | 687 | sols (1 Martian year) |\n| GPU compute performance (H100) | 60 | TFLOPS (FP16) |\n| Total system compute (8 x H100) | 480 | TFLOPS (FP16) |\n\n---\n\n## **Section D: Failure Modes and Mitigations**\n\n| Failure Mode | Probability | Mitigation | Fallback Mode |\n|--------------|-------------|------------|----------------|\n| Solar panel dust",
+      "numbers": [
+        {
+          "value": 1.0,
+          "unit": ""
+        },
+        {
+          "value": 2.0,
+          "unit": ""
+        },
+        {
+          "value": 3.0,
+          "unit": ""
+        },
+        {
+          "value": 4.0,
+          "unit": ""
+        },
+        {
+          "value": 5.0,
+          "unit": ""
+        },
+        {
+          "value": 2.0,
+          "unit": ""
+        },
+        {
+          "value": 400.0,
+          "unit": ""
+        },
+        {
+          "value": 2.0,
+          "unit": ""
+        },
+        {
+          "value": 900.0,
+          "unit": ""
+        },
+        {
+          "value": 5.0,
+          "unit": ""
+        },
+        {
+          "value": 400.0,
+          "unit": ""
+        },
+        {
+          "value": 3.0,
+          "unit": ""
+        },
+        {
+          "value": 500.0,
+          "unit": ""
+        },
+        {
+          "value": 10.0,
+          "unit": ""
+        },
+        {
+          "value": 2.0,
+          "unit": ""
+        },
+        {
+          "value": 900.0,
+          "unit": ""
+        },
+        {
+          "value": 3.45,
+          "unit": ""
+        },
+        {
+          "value": -40.0,
+          "unit": ""
+        },
+        {
+          "value": 85.0,
+          "unit": ""
+        },
+        {
+          "value": -125.0,
+          "unit": ""
+        },
+        {
+          "value": 20.0,
+          "unit": ""
+        },
+        {
+          "value": 300.0,
+          "unit": ""
+        },
+        {
+          "value": 5.0,
+          "unit": ""
+        },
+        {
+          "value": 4.0,
+          "unit": ""
+        },
+        {
+          "value": 24.0,
+          "unit": ""
+        },
+        {
+          "value": 687.0,
+          "unit": ""
+        },
+        {
+          "value": 1.0,
+          "unit": ""
+        },
+        {
+          "value": 100.0,
+          "unit": ""
+        },
+        {
+          "value": 60.0,
+          "unit": ""
+        },
+        {
+          "value": 16.0,
+          "unit": ""
+        },
+        {
+          "value": 8.0,
+          "unit": ""
+        },
+        {
+          "value": 100.0,
+          "unit": ""
+        },
+        {
+          "value": 480.0,
+          "unit": ""
+        },
+        {
+          "value": 16.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "deployment",
+      "text": "# **Technical Plan for Deployment of 8-GPU NVIDIA Server Rack on Mars**  \n*Refined with stricter quantitative checks and reduced assumptions*\n\n---\n\n## **Section A: Key Assumptions**  \n1.",
+      "numbers": [
+        {
+          "value": 8.0,
+          "unit": ""
+        },
+        {
+          "value": 1.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "deployment",
+      "text": "**Mission Timeline**: Deployment occurs during a 12-hour Martian day (sol) with 12.5 hours of night.",
+      "numbers": [
+        {
+          "value": 12.0,
+          "unit": ""
+        },
+        {
+          "value": 12.5,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "other",
+      "text": "Server must operate continuously (24.6 hours/sol).",
+      "numbers": [
+        {
+          "value": 24.6,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "other",
+      "text": "2.",
+      "numbers": [
+        {
+          "value": 2.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "other",
+      "text": "**Atmospheric Conditions**:  \n   - Surface pressure: 600 Pa (CO₂-dominated).",
+      "numbers": [
+        {
+          "value": 600.0,
+          "unit": "Pa"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "thermal",
+      "text": "- Temperature range: -125°C to 20°C (diurnal variation of 145°C).",
+      "numbers": [
+        {
+          "value": -125.0,
+          "unit": "°C"
+        },
+        {
+          "value": 20.0,
+          "unit": "°C"
+        },
+        {
+          "value": 145.0,
+          "unit": "°C"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "power",
+      "text": "- Solar irradiance: 590 W/m² (equatorial average, 44% of Earth’s).",
+      "numbers": [
+        {
+          "value": 590.0,
+          "unit": "W"
+        },
+        {
+          "value": 44.0,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "other",
+      "text": "3.",
+      "numbers": [
+        {
+          "value": 3.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "power",
+      "text": "**Power Source**:  \n   - Solar arrays with lithium-ion batteries (energy density: 250 Wh/kg).",
+      "numbers": [
+        {
+          "value": 250.0,
+          "unit": "W"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "other",
+      "text": "- Dust storm duration: 15 sols (worst-case historical data).",
+      "numbers": [
+        {
+          "value": 15.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "other",
+      "text": "4.",
+      "numbers": [
+        {
+          "value": 4.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "thermal",
+      "text": "**Thermal Management**:  \n   - Active cooling via heat pipes (thermal conductivity: 10,000 W/m·K) and radiators.",
+      "numbers": [
+        {
+          "value": 10.0,
+          "unit": ""
+        },
+        {
+          "value": 0.0,
+          "unit": "W"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "thermal",
+      "text": "- Passive insulation with multi-layered thermal blankets (emissivity: 0.1).",
+      "numbers": [
+        {
+          "value": 0.1,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "other",
+      "text": "5.",
+      "numbers": [
+        {
+          "value": 5.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "other",
+      "text": "**Communication**:  \n   - Relay via Mars Reconnaissance Orbiter (MRO) at 10 Mbps peak, 100 GB/day data buffer.",
+      "numbers": [
+        {
+          "value": 10.0,
+          "unit": ""
+        },
+        {
+          "value": 100.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "other",
+      "text": "- Latency: 4–24 minutes one-way (Earth-Mars distance: 54.6 million km to 401 million km).",
+      "numbers": [
+        {
+          "value": 4.0,
+          "unit": ""
+        },
+        {
+          "value": 24.0,
+          "unit": ""
+        },
+        {
+          "value": 54.6,
+          "unit": ""
+        },
+        {
+          "value": 401.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "other",
+      "text": "6.",
+      "numbers": [
+        {
+          "value": 6.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "deployment",
+      "text": "**Transport**:  \n   - Server rack integrated into a modified Mars 2020 lander (mass: 1,500 kg).",
+      "numbers": [
+        {
+          "value": 2020.0,
+          "unit": ""
+        },
+        {
+          "value": 1.0,
+          "unit": ""
+        },
+        {
+          "value": 500.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "other",
+      "text": "- Launched via SLS or Starship (payload capacity: 5,000 kg to Mars).",
+      "numbers": [
+        {
+          "value": 5.0,
+          "unit": ""
+        },
+        {
+          "value": 0.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "other",
+      "text": "7.",
+      "numbers": [
+        {
+          "value": 7.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "power",
+      "text": "**GPU Configuration**:  \n   - 8 x NVIDIA H100 GPUs (300 W TDP each, 2.4 kW total).",
+      "numbers": [
+        {
+          "value": 8.0,
+          "unit": ""
+        },
+        {
+          "value": 100.0,
+          "unit": ""
+        },
+        {
+          "value": 300.0,
+          "unit": "W"
+        },
+        {
+          "value": 2.4,
+          "unit": "kW"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "power",
+      "text": "- System total power: 3.6 kW (includes CPUs, storage, cooling, and redundancy).",
+      "numbers": [
+        {
+          "value": 3.6,
+          "unit": "kW"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "other",
+      "text": "8.",
+      "numbers": [
+        {
+          "value": 8.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "deployment",
+      "text": "**Landing Site**: Arcadia Planitia (latitude: 45°N, elevation: -3.5 km, dust accumulation rate: 0.5 mm/sol).",
+      "numbers": [
+        {
+          "value": 45.0,
+          "unit": ""
+        },
+        {
+          "value": -3.5,
+          "unit": ""
+        },
+        {
+          "value": 0.5,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "other",
+      "text": "9.",
+      "numbers": [
+        {
+          "value": 9.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "other",
+      "text": "**Mission Duration**: 687 sols (1 Martian year), with 90% reliability target.",
+      "numbers": [
+        {
+          "value": 687.0,
+          "unit": ""
+        },
+        {
+          "value": 1.0,
+          "unit": ""
+        },
+        {
+          "value": 90.0,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "deployment",
+      "text": "---\n\n## **Section B: Step-by-Step Deployment Plan**  \n\n### **1.",
+      "numbers": [
+        {
+          "value": 1.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "deployment",
+      "text": "Transport and Landing Sequence**  \n- **Launch**: Server rack (400 kg) and lander (1,500 kg) launched via Starship (payload capacity: 5,000 kg).",
+      "numbers": [
+        {
+          "value": 400.0,
+          "unit": ""
+        },
+        {
+          "value": 1.0,
+          "unit": ""
+        },
+        {
+          "value": 500.0,
+          "unit": ""
+        },
+        {
+          "value": 5.0,
+          "unit": ""
+        },
+        {
+          "value": 0.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "power",
+      "text": "- **Cruise Phase**: Server in stasis (0.1 W power draw for monitoring).",
+      "numbers": [
+        {
+          "value": 0.1,
+          "unit": "W"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "thermal",
+      "text": "- **EDL**:  \n  - Entry: Heat shield (10 cm thick ablative material) withstands 1,500°C.",
+      "numbers": [
+        {
+          "value": 10.0,
+          "unit": ""
+        },
+        {
+          "value": 1.0,
+          "unit": ""
+        },
+        {
+          "value": 500.0,
+          "unit": "°C"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "deployment",
+      "text": "- Parachute deployment at 10 km altitude (Mars atmospheric density: 0.02 kg/m³).",
+      "numbers": [
+        {
+          "value": 10.0,
+          "unit": ""
+        },
+        {
+          "value": 0.02,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "power",
+      "text": "- Powered descent: 400 kg of solid propellant for retro-rockets (specific impulse: 250 s).",
+      "numbers": [
+        {
+          "value": 400.0,
+          "unit": ""
+        },
+        {
+          "value": 250.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "deployment",
+      "text": "- Sky crane-style deployment: 30 seconds to lower lander to surface.",
+      "numbers": [
+        {
+          "value": 30.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "other",
+      "text": "### **2.",
+      "numbers": [
+        {
+          "value": 2.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "deployment",
+      "text": "Post-Landing Deployment**  \n- **Unpack Server**: Robotic arms deploy server from pressurized container (1.5 m³ volume).",
+      "numbers": [
+        {
+          "value": 1.5,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "power",
+      "text": "- **Power Setup**:  \n  - Deploy 15 m² solar array (mass: 200 kg, peak power: 8.85 kW).",
+      "numbers": [
+        {
+          "value": 15.0,
+          "unit": ""
+        },
+        {
+          "value": 200.0,
+          "unit": ""
+        },
+        {
+          "value": 8.85,
+          "unit": "kW"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "power",
+      "text": "- Install 100 kWh lithium-ion battery (mass: 400 kg, 250 Wh/kg).",
+      "numbers": [
+        {
+          "value": 100.0,
+          "unit": "kW"
+        },
+        {
+          "value": 400.0,
+          "unit": ""
+        },
+        {
+          "value": 250.0,
+          "unit": "W"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "power",
+      "text": "- **Thermal Setup**:  \n  - Mount 5 m² radiators (aluminum, emissivity 0.1) to dissipate 3.6 kW heat.",
+      "numbers": [
+        {
+          "value": 5.0,
+          "unit": ""
+        },
+        {
+          "value": 0.1,
+          "unit": ""
+        },
+        {
+          "value": 3.6,
+          "unit": "kW"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "thermal",
+      "text": "- Initialize PCM storage (paraffin wax, latent heat: 200 kJ/kg) to handle 12-hour thermal swings.",
+      "numbers": [
+        {
+          "value": 200.0,
+          "unit": ""
+        },
+        {
+          "value": 12.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "deployment",
+      "text": "- **Software Initialization**:  \n  - Boot pre-deployed AI/ML models (100 GB storage).",
+      "numbers": [
+        {
+          "value": 100.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "other",
+      "text": "- Establish communication with MRO (10 Mbps, 10-minute daily window).",
+      "numbers": [
+        {
+          "value": 10.0,
+          "unit": ""
+        },
+        {
+          "value": 10.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "other",
+      "text": "---\n\n## **Section C: Quantitative Estimates**  \n\n### **1.",
+      "numbers": [
+        {
+          "value": 1.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 2,
+      "type": "power",
+      "text": "Power System Sizing**  \n- **Daily Energy Requirement**:  \n  - 3.6 kW * 24.6 hours = **88.5",
+      "numbers": [
+        {
+          "value": 3.6,
+          "unit": "kW"
+        },
+        {
+          "value": 24.6,
+          "unit": ""
+        },
+        {
+          "value": 88.5,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "deployment",
+      "text": "# **Technical Plan for Deployment of 8-GPU NVIDIA Server Rack on Mars**  \n*Finalized with Stricter Quantitative Checks and Reduced Assumptions*\n\n---\n\n## **Section A: Key Assumptions**  \n1.",
+      "numbers": [
+        {
+          "value": 8.0,
+          "unit": ""
+        },
+        {
+          "value": 1.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "deployment",
+      "text": "**Mission Timeline**:  \n   - Deployment occurs during a 12-hour Martian day (sol) with 12.6 hours of night.",
+      "numbers": [
+        {
+          "value": 12.0,
+          "unit": ""
+        },
+        {
+          "value": 12.6,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "- Server must operate continuously (24.6 hours/sol).",
+      "numbers": [
+        {
+          "value": 24.6,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "- Mission duration: 687 sols (1 Martian year).",
+      "numbers": [
+        {
+          "value": 687.0,
+          "unit": ""
+        },
+        {
+          "value": 1.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "- 90% system reliability target.",
+      "numbers": [
+        {
+          "value": 90.0,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "2.",
+      "numbers": [
+        {
+          "value": 2.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "**Atmospheric Conditions**:  \n   - Surface pressure: 600 Pa (CO₂-dominated).",
+      "numbers": [
+        {
+          "value": 600.0,
+          "unit": "Pa"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "thermal",
+      "text": "- Temperature range: -125°C to 20°C (diurnal variation of 145°C).",
+      "numbers": [
+        {
+          "value": -125.0,
+          "unit": "°C"
+        },
+        {
+          "value": 20.0,
+          "unit": "°C"
+        },
+        {
+          "value": 145.0,
+          "unit": "°C"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "power",
+      "text": "- Solar irradiance: 590 W/m² (equatorial average).",
+      "numbers": [
+        {
+          "value": 590.0,
+          "unit": "W"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "- Dust accumulation rate: 0.5 mm/sol (Arcadia Planitia).",
+      "numbers": [
+        {
+          "value": 0.5,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "3.",
+      "numbers": [
+        {
+          "value": 3.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "power",
+      "text": "**Power Source**:  \n   - Solar arrays with 30% efficiency (GaInP/GaAs triple-junction cells).",
+      "numbers": [
+        {
+          "value": 30.0,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "- Lithium-ion batteries (250 Wh/kg, 90% round-trip efficiency).",
+      "numbers": [
+        {
+          "value": 250.0,
+          "unit": "W"
+        },
+        {
+          "value": 90.0,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "- Dust storm duration: 15 sols (worst-case historical data).",
+      "numbers": [
+        {
+          "value": 15.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "- Minimum 3 sols of battery autonomy required for storm survival.",
+      "numbers": [
+        {
+          "value": 3.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "4.",
+      "numbers": [
+        {
+          "value": 4.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "thermal",
+      "text": "**Thermal Management**:  \n   - Active cooling via heat pipes (10,000 W/m·K thermal conductivity).",
+      "numbers": [
+        {
+          "value": 10.0,
+          "unit": ""
+        },
+        {
+          "value": 0.0,
+          "unit": "W"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "- Radiator surface area: 4.5 m² (emissivity: 0.85).",
+      "numbers": [
+        {
+          "value": 4.5,
+          "unit": ""
+        },
+        {
+          "value": 0.85,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "thermal",
+      "text": "- Passive insulation: Multi-layered thermal blankets (MLI), emissivity 0.1.",
+      "numbers": [
+        {
+          "value": 0.1,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "thermal",
+      "text": "- GPU operating temperature limit: 70°C (NVIDIA H100).",
+      "numbers": [
+        {
+          "value": 70.0,
+          "unit": "°C"
+        },
+        {
+          "value": 100.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "5.",
+      "numbers": [
+        {
+          "value": 5.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "**Communication**:  \n   - Relay via Mars Reconnaissance Orbiter (MRO) at 10 Mbps peak.",
+      "numbers": [
+        {
+          "value": 10.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "- 100 GB/day data buffer.",
+      "numbers": [
+        {
+          "value": 100.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "- Latency: 4–24 minutes one-way (Earth-Mars distance: 54.6 million km to 401 million km).",
+      "numbers": [
+        {
+          "value": 4.0,
+          "unit": ""
+        },
+        {
+          "value": 24.0,
+          "unit": ""
+        },
+        {
+          "value": 54.6,
+          "unit": ""
+        },
+        {
+          "value": 401.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "6.",
+      "numbers": [
+        {
+          "value": 6.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "power",
+      "text": "**Transport**:  \n   - Server rack mass: 400 kg (8 x H100 GPUs, 3.6 kW total).",
+      "numbers": [
+        {
+          "value": 400.0,
+          "unit": ""
+        },
+        {
+          "value": 8.0,
+          "unit": ""
+        },
+        {
+          "value": 100.0,
+          "unit": ""
+        },
+        {
+          "value": 3.6,
+          "unit": "kW"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "- Integrated into a modified Mars 2020 lander (1,500 kg total).",
+      "numbers": [
+        {
+          "value": 2020.0,
+          "unit": ""
+        },
+        {
+          "value": 1.0,
+          "unit": ""
+        },
+        {
+          "value": 500.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "- Launched via Starship (payload capacity: 5,000 kg to Mars).",
+      "numbers": [
+        {
+          "value": 5.0,
+          "unit": ""
+        },
+        {
+          "value": 0.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "7.",
+      "numbers": [
+        {
+          "value": 7.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "power",
+      "text": "**GPU Configuration**:  \n   - 8 x NVIDIA H100 GPUs (300 W TDP each, 2.4 kW total).",
+      "numbers": [
+        {
+          "value": 8.0,
+          "unit": ""
+        },
+        {
+          "value": 100.0,
+          "unit": ""
+        },
+        {
+          "value": 300.0,
+          "unit": "W"
+        },
+        {
+          "value": 2.4,
+          "unit": "kW"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "power",
+      "text": "- System total power: 3.6 kW (includes CPUs, storage, cooling, and redundancy).",
+      "numbers": [
+        {
+          "value": 3.6,
+          "unit": "kW"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "power",
+      "text": "- Redundant power and cooling subsystems (2x redundancy for critical components).",
+      "numbers": [
+        {
+          "value": 2.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "8.",
+      "numbers": [
+        {
+          "value": 8.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "deployment",
+      "text": "**Landing Site**:  \n   - Arcadia Planitia (latitude: 45°N, elevation: -3.5 km).",
+      "numbers": [
+        {
+          "value": 45.0,
+          "unit": ""
+        },
+        {
+          "value": -3.5,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "power",
+      "text": "- Solar panel tilt: 45° for optimal irradiance.",
+      "numbers": [
+        {
+          "value": 45.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "9.",
+      "numbers": [
+        {
+          "value": 9.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "**Mission Duration**:  \n   - 687 sols (1 Martian year).",
+      "numbers": [
+        {
+          "value": 687.0,
+          "unit": ""
+        },
+        {
+          "value": 1.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "- 90% reliability target.",
+      "numbers": [
+        {
+          "value": 90.0,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "deployment",
+      "text": "---\n\n## **Section B: Step-by-Step Deployment Plan**  \n\n### **1.",
+      "numbers": [
+        {
+          "value": 1.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "deployment",
+      "text": "Transport and Landing Sequence**  \n- **Launch**:  \n  - Server rack (400 kg) and lander (1,500 kg) launched via Starship.",
+      "numbers": [
+        {
+          "value": 400.0,
+          "unit": ""
+        },
+        {
+          "value": 1.0,
+          "unit": ""
+        },
+        {
+          "value": 500.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "- Launch window: Earth-Mars transfer window (every 26 months).",
+      "numbers": [
+        {
+          "value": 26.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "power",
+      "text": "- Cruise phase: Server in stasis (0.1 W power draw for monitoring).",
+      "numbers": [
+        {
+          "value": 0.1,
+          "unit": "W"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "thermal",
+      "text": "- **Entry, Descent, and Landing (EDL)**:  \n  - Entry: Heat shield (SiC-based, 1000°C rating).",
+      "numbers": [
+        {
+          "value": 1000.0,
+          "unit": "°C"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "deployment",
+      "text": "- Parachute deployment at 10 km altitude.",
+      "numbers": [
+        {
+          "value": 10.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "- Sky crane descent with 4 retro-rockets (200 kN each).",
+      "numbers": [
+        {
+          "value": 4.0,
+          "unit": ""
+        },
+        {
+          "value": 200.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "- Touchdown velocity: <1.5 m/s.",
+      "numbers": [
+        {
+          "value": 1.5,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "- Shock absorption: 4-legged lander with crushable honeycomb structure.",
+      "numbers": [
+        {
+          "value": 4.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "power",
+      "text": "- **Post-Landing Deployment**:  \n  - Solar arrays and radiators deployed within 2 sols.",
+      "numbers": [
+        {
+          "value": 2.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "power",
+      "text": "- Server rack powered up after 48 hours of thermal stabilization.",
+      "numbers": [
+        {
+          "value": 48.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "---\n\n### **2.",
+      "numbers": [
+        {
+          "value": 2.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "power",
+      "text": "Power System Sizing for Continuous Operation**  \n- **Power Requirements**:  \n  - Continuous power draw: 3.6 kW.",
+      "numbers": [
+        {
+          "value": 3.6,
+          "unit": "kW"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "power",
+      "text": "- Minimum energy per sol: 3.6 kW × 24.6 h = **88.6 kWh/day**.",
+      "numbers": [
+        {
+          "value": 3.6,
+          "unit": "kW"
+        },
+        {
+          "value": 24.6,
+          "unit": ""
+        },
+        {
+          "value": 88.6,
+          "unit": "kW"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "power",
+      "text": "- **Solar Array Sizing**:  \n  - Solar irradiance: 590 W/m².",
+      "numbers": [
+        {
+          "value": 590.0,
+          "unit": "W"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "power",
+      "text": "- Solar array efficiency: 30%.",
+      "numbers": [
+        {
+          "value": 30.0,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "power",
+      "text": "- Required solar array area:  \n    $$\n    A = \\frac{88.6 \\text{ kWh/day}}{590 \\text{ W/m}^2 \\times 0.3 \\times 12 \\text{ h/day}} = 4.3 \\text{ m}^2\n    $$  \n  - Installed solar array area: **5 m²** (10% margin for dust and degradation).",
+      "numbers": [
+        {
+          "value": 88.6,
+          "unit": ""
+        },
+        {
+          "value": 590.0,
+          "unit": ""
+        },
+        {
+          "value": 2.0,
+          "unit": ""
+        },
+        {
+          "value": 0.3,
+          "unit": ""
+        },
+        {
+          "value": 12.0,
+          "unit": ""
+        },
+        {
+          "value": 4.3,
+          "unit": ""
+        },
+        {
+          "value": 2.0,
+          "unit": ""
+        },
+        {
+          "value": 5.0,
+          "unit": ""
+        },
+        {
+          "value": 10.0,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "power",
+      "text": "- **Battery Sizing**:  \n  - Minimum 3 sols of autonomy:  \n    $$\n    E = 3 \\times 88.6 \\text{ kWh} = 265.8 \\text{ kWh}\n    $$  \n  - Battery energy density: 250 Wh/kg.",
+      "numbers": [
+        {
+          "value": 3.0,
+          "unit": ""
+        },
+        {
+          "value": 3.0,
+          "unit": ""
+        },
+        {
+          "value": 88.6,
+          "unit": ""
+        },
+        {
+          "value": 265.8,
+          "unit": ""
+        },
+        {
+          "value": 250.0,
+          "unit": "W"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "power",
+      "text": "- Required battery mass:  \n    $$\n    M = \\frac{265.8 \\text{ kWh}}{0.25 \\text{ kWh/kg}} = 1,063 \\text{ kg}\n    $$  \n  - Installed battery mass: **1,200 kg** (13% margin for degradation and inefficiency).",
+      "numbers": [
+        {
+          "value": 265.8,
+          "unit": ""
+        },
+        {
+          "value": 0.25,
+          "unit": ""
+        },
+        {
+          "value": 1.0,
+          "unit": ""
+        },
+        {
+          "value": 63.0,
+          "unit": ""
+        },
+        {
+          "value": 1.0,
+          "unit": ""
+        },
+        {
+          "value": 200.0,
+          "unit": ""
+        },
+        {
+          "value": 13.0,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "power",
+      "text": "- **Total Power System Mass**:  \n  - Solar array: 15 kg/m² × 5 m² = **75 kg**.",
+      "numbers": [
+        {
+          "value": 15.0,
+          "unit": ""
+        },
+        {
+          "value": 5.0,
+          "unit": ""
+        },
+        {
+          "value": 75.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "- Battery: **1,200 kg**.",
+      "numbers": [
+        {
+          "value": 1.0,
+          "unit": ""
+        },
+        {
+          "value": 200.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "power",
+      "text": "- Power electronics: **100 kg**.",
+      "numbers": [
+        {
+          "value": 100.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "- Total: **1,375 kg** (within 5,000 kg Starship payload limit).",
+      "numbers": [
+        {
+          "value": 1.0,
+          "unit": ""
+        },
+        {
+          "value": 375.0,
+          "unit": ""
+        },
+        {
+          "value": 5.0,
+          "unit": ""
+        },
+        {
+          "value": 0.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "---\n\n### **3.",
+      "numbers": [
+        {
+          "value": 3.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "power",
+      "text": "Thermal Management Under Martian Atmosphere**  \n- **Heat Dissipation Requirement**:  \n  - Total heat load: 3.6 kW.",
+      "numbers": [
+        {
+          "value": 3.6,
+          "unit": "kW"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "- Radiator area: 4.5 m².",
+      "numbers": [
+        {
+          "value": 4.5,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "other",
+      "text": "- Radiator emissivity: 0.85.",
+      "numbers": [
+        {
+          "value": 0.85,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "thermal",
+      "text": "- Martian ambient temperature: -60°C (average).",
+      "numbers": [
+        {
+          "value": -60.0,
+          "unit": "°C"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "thermal",
+      "text": "- Radiator surface temperature: 20°C (to maintain GPU at 70°C).",
+      "numbers": [
+        {
+          "value": 20.0,
+          "unit": "°C"
+        },
+        {
+          "value": 70.0,
+          "unit": "°C"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "power",
+      "text": "- Radiator heat loss:  \n    $$\n    Q = \\epsilon \\sigma A (T_{rad}^4 - T_{amb}^4) = 0.85 \\times 5.67 \\times 10^{-8} \\times 4.5 \\times (293^4 - 213^4) = 3.7 \\text{ kW}\n    $$  \n  - Heat pipe system: 10,000 W/m·K conductivity.",
+      "numbers": [
+        {
+          "value": 4.0,
+          "unit": ""
+        },
+        {
+          "value": 4.0,
+          "unit": ""
+        },
+        {
+          "value": 0.85,
+          "unit": ""
+        },
+        {
+          "value": 5.67,
+          "unit": ""
+        },
+        {
+          "value": 10.0,
+          "unit": ""
+        },
+        {
+          "value": -8.0,
+          "unit": ""
+        },
+        {
+          "value": 4.5,
+          "unit": ""
+        },
+        {
+          "value": 293.0,
+          "unit": ""
+        },
+        {
+          "value": 4.0,
+          "unit": ""
+        },
+        {
+          "value": 213.0,
+          "unit": ""
+        },
+        {
+          "value": 4.0,
+          "unit": ""
+        },
+        {
+          "value": 3.7,
+          "unit": ""
+        },
+        {
+          "value": 10.0,
+          "unit": ""
+        },
+        {
+          "value": 0.0,
+          "unit": "W"
+        }
+      ]
+    },
+    {
+      "strategy": "prompt_iteration",
+      "run_id": 3,
+      "type": "thermal",
+      "text": "- Required heat pipe length:  \n    $$\n    L = \\frac{Q}{k \\cdot \\Delta T} =",
+      "numbers": []
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "other",
+      "text": "### Section A: Key Assumptions  \n1.",
+      "numbers": [
+        {
+          "value": 1.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "**Mission Context**:  \n   - The server is part of a pre-deployed Martian habitat or rover mission with existing infrastructure.",
+      "numbers": []
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "power",
+      "text": "- Power, thermal control, and communication systems are shared with the habitat.",
+      "numbers": []
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "other",
+      "text": "2.",
+      "numbers": [
+        {
+          "value": 2.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "power",
+      "text": "**Technical Specifications**:  \n   - **Server**: 8 NVIDIA A100 GPUs (2.5 kW total power, including cooling and peripherals).",
+      "numbers": [
+        {
+          "value": 8.0,
+          "unit": ""
+        },
+        {
+          "value": 100.0,
+          "unit": ""
+        },
+        {
+          "value": 2.5,
+          "unit": "kW"
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "- **Landing Vehicle**: SpaceX Starship-derived lander with 10-ton payload capacity.",
+      "numbers": [
+        {
+          "value": 10.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "- **Martian Environment**:  \n     - Surface temperature: -60°C to 20°C (equatorial diurnal range).",
+      "numbers": [
+        {
+          "value": -60.0,
+          "unit": "°C"
+        },
+        {
+          "value": 20.0,
+          "unit": "°C"
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "other",
+      "text": "- Atmospheric pressure: 0.6% of Earth’s, CO₂-dominated.",
+      "numbers": [
+        {
+          "value": 0.6,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "power",
+      "text": "- Solar irradiance: 590 W/m² at equator (43% of Earth’s).",
+      "numbers": [
+        {
+          "value": 590.0,
+          "unit": "W"
+        },
+        {
+          "value": 43.0,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "---\n\n### Section B: Step-by-Step Deployment Plan  \n\n#### 1.",
+      "numbers": [
+        {
+          "value": 1.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "Transport and Landing Sequence  \n- **Launch**: Server and lander depart Earth on a Falcon Heavy or equivalent.",
+      "numbers": []
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "- **EDL (Entry, Descent, Landing)**:  \n  - **Entry**: Ablative heat shield withstands 1,600°C peak temperatures.",
+      "numbers": [
+        {
+          "value": 1.0,
+          "unit": ""
+        },
+        {
+          "value": 600.0,
+          "unit": "°C"
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "other",
+      "text": "- **Parachute Deceleration**: Mars’ thin atmosphere requires larger parachutes (e.g., 30m diameter).",
+      "numbers": [
+        {
+          "value": 30.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "- **Propulsive Descent**: Retro rockets (e.g., SpaceX Raptor variants) for final landing.",
+      "numbers": []
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "- **Deployment**: Server is offloaded into a pressurized habitat module.",
+      "numbers": []
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "other",
+      "text": "#### 2.",
+      "numbers": [
+        {
+          "value": 2.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "power",
+      "text": "Power System Integration  \n- **Primary Power**: Habitat’s nuclear reactor (e.g., 10 kW fission system).",
+      "numbers": [
+        {
+          "value": 10.0,
+          "unit": "kW"
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "power",
+      "text": "- **Backup**: Lithium-ion battery bank (25 kWh) for short-term outages.",
+      "numbers": [
+        {
+          "value": 25.0,
+          "unit": "kW"
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "power",
+      "text": "- **Solar Augmentation**: 20 m² solar array (30% efficiency) for redundancy.",
+      "numbers": [
+        {
+          "value": 20.0,
+          "unit": ""
+        },
+        {
+          "value": 30.0,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "other",
+      "text": "#### 3.",
+      "numbers": [
+        {
+          "value": 3.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "Thermal Management  \n- **Passive Cooling**: Server operates within habitat’s thermal envelope (20°C ±5°C).",
+      "numbers": [
+        {
+          "value": 20.0,
+          "unit": "°C"
+        },
+        {
+          "value": 5.0,
+          "unit": "°C"
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "power",
+      "text": "- **Radiators**: Habitat’s radiators dissipate waste heat via radiation (9 m² area, 2.5 kW capacity).",
+      "numbers": [
+        {
+          "value": 9.0,
+          "unit": ""
+        },
+        {
+          "value": 2.5,
+          "unit": "kW"
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "other",
+      "text": "#### 4.",
+      "numbers": [
+        {
+          "value": 4.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "Software Deployment  \n- **Pre-Loaded Software**: NVIDIA CUDA drivers, AI frameworks (PyTorch/TensorFlow), and mission-specific code.",
+      "numbers": []
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "other",
+      "text": "#### 5.",
+      "numbers": [
+        {
+          "value": 5.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "power",
+      "text": "Risk Mitigation  \n- **Redundancy**: Dual GPUs per task, redundant power paths.",
+      "numbers": []
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "power",
+      "text": "---\n\n### Section C: Quantitative Estimates  \n\n| **Parameter**               | **Value**                          | **Calculation/Assumption**                                                                 |\n|-----------------------------|------------------------------------|-------------------------------------------------------------------------------------------|\n| **Server Power Demand**      | 2,500 W                            | 8× NVIDIA A100 (300 W/GPU) + cooling/overhead.",
+      "numbers": [
+        {
+          "value": 2.0,
+          "unit": ""
+        },
+        {
+          "value": 500.0,
+          "unit": "W"
+        },
+        {
+          "value": 8.0,
+          "unit": ""
+        },
+        {
+          "value": 100.0,
+          "unit": ""
+        },
+        {
+          "value": 300.0,
+          "unit": "W"
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "power",
+      "text": "|\n| **Solar Array Size**         | 20 m²                              | \\( \\frac{2,500 \\text{ W} \\times 24 \\text{ h}}{0.3 \\times 590 \\text{ W/m}^2 \\times 14 \\text{ h/day}} \\approx 21 \\text{ m}^2 \\).",
+      "numbers": [
+        {
+          "value": 20.0,
+          "unit": ""
+        },
+        {
+          "value": 2.0,
+          "unit": ""
+        },
+        {
+          "value": 500.0,
+          "unit": ""
+        },
+        {
+          "value": 24.0,
+          "unit": ""
+        },
+        {
+          "value": 0.3,
+          "unit": ""
+        },
+        {
+          "value": 590.0,
+          "unit": ""
+        },
+        {
+          "value": 2.0,
+          "unit": ""
+        },
+        {
+          "value": 14.0,
+          "unit": ""
+        },
+        {
+          "value": 21.0,
+          "unit": ""
+        },
+        {
+          "value": 2.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "power",
+      "text": "|\n| **Nuclear Reactor Power**    | 10 kW                              | Exceeds server demand (2.5 kW) with margin for habitat systems.",
+      "numbers": [
+        {
+          "value": 10.0,
+          "unit": "kW"
+        },
+        {
+          "value": 2.5,
+          "unit": "kW"
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "|\n| **Thermal Radiator Area**    | 9 m²                               | \\( A = \\frac{2,500 \\text{ W}}{0.8 \\times 5.67 \\times 10^{-8} \\times (300^4 - 213^4)} \\approx 9 \\text{ m}^2 \\).",
+      "numbers": [
+        {
+          "value": 9.0,
+          "unit": ""
+        },
+        {
+          "value": 2.0,
+          "unit": ""
+        },
+        {
+          "value": 500.0,
+          "unit": ""
+        },
+        {
+          "value": 0.8,
+          "unit": ""
+        },
+        {
+          "value": 5.67,
+          "unit": ""
+        },
+        {
+          "value": 10.0,
+          "unit": ""
+        },
+        {
+          "value": -8.0,
+          "unit": ""
+        },
+        {
+          "value": 300.0,
+          "unit": ""
+        },
+        {
+          "value": 4.0,
+          "unit": ""
+        },
+        {
+          "value": 213.0,
+          "unit": ""
+        },
+        {
+          "value": 4.0,
+          "unit": ""
+        },
+        {
+          "value": 9.0,
+          "unit": ""
+        },
+        {
+          "value": 2.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "power",
+      "text": "|\n| **Battery Capacity**         | 25 kWh                             | Covers 10 hours of night operation at 2.5 kW.",
+      "numbers": [
+        {
+          "value": 25.0,
+          "unit": "kW"
+        },
+        {
+          "value": 10.0,
+          "unit": ""
+        },
+        {
+          "value": 2.5,
+          "unit": "kW"
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "|\n| **Landing Mass**             | 200 kg                             | Server + shielding + mounting hardware.",
+      "numbers": [
+        {
+          "value": 200.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "|\n\n---\n\n### Section D: Failure Modes and Mitigations  \n\n| **Risk**                     | **Mitigation**                                                                 |\n|-----------------------------|--------------------------------------------------------------------------------|\n| **EDL Failure**              | Redundant parachutes, autonomous landing sensors, and abort protocols.",
+      "numbers": []
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "power",
+      "text": "|\n| **Power Outage**             | Nuclear reactor + battery backup ensures 100% uptime.",
+      "numbers": [
+        {
+          "value": 100.0,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "|\n| **Thermal Overload**         | Habitat thermal control limits server enclosure to 25°C max.",
+      "numbers": [
+        {
+          "value": 25.0,
+          "unit": "°C"
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "power",
+      "text": "|\n| **Dust Accumulation**        | Solar panels coated with anti-dust material; habitat protects server from dust.",
+      "numbers": []
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "power",
+      "text": "|\n\n---\n\n### Section E: Final Feasibility Verdict  \n**Conditional Go**  \n- **Go**:  \n  - Server fits within habitat power/thermal budgets.",
+      "numbers": []
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "- EDL and landing are feasible with existing technology.",
+      "numbers": []
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "other",
+      "text": "- **Conditions**:  \n  1.",
+      "numbers": [
+        {
+          "value": 1.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "power",
+      "text": "Habitat must provide **≥10 kW power** and **20°C thermal stability**.",
+      "numbers": [
+        {
+          "value": 10.0,
+          "unit": "kW"
+        },
+        {
+          "value": 20.0,
+          "unit": "°C"
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "other",
+      "text": "2.",
+      "numbers": [
+        {
+          "value": 2.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "other",
+      "text": "3.",
+      "numbers": [
+        {
+          "value": 3.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "power",
+      "text": "Redundant systems (power, thermal, software) are implemented.",
+      "numbers": []
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "power",
+      "text": "**Risks**:  \n- Power margin tight if habitat systems exceed 7.5 kW.",
+      "numbers": [
+        {
+          "value": 7.5,
+          "unit": "kW"
+        }
+      ]
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "- Thermal control failure could damage GPUs.",
+      "numbers": []
+    },
+    {
+      "strategy": "reasoning_model",
+      "run_id": 1,
+      "type": "power",
+      "text": "**Next Steps**:  \n- Validate habitat power/thermal specs.",
+      "numbers": []
+    },
+    {
+      "strategy": "tool_augmented",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "# Technical Plan for Deployment of 8-GPU Server Rack on Martian Equatorial Site  \n\n---\n\n## **Section A: Key Assumptions**  \n1.",
+      "numbers": [
+        {
+          "value": 8.0,
+          "unit": ""
+        },
+        {
+          "value": 1.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "tool_augmented",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "**Server Mass**: 500 kg (includes 8 GPUs, chassis, cooling, and redundancy).",
+      "numbers": [
+        {
+          "value": 500.0,
+          "unit": ""
+        },
+        {
+          "value": 8.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "tool_augmented",
+      "run_id": 1,
+      "type": "other",
+      "text": "2.",
+      "numbers": [
+        {
+          "value": 2.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "tool_augmented",
+      "run_id": 1,
+      "type": "power",
+      "text": "**Power Consumption**: 4.5 kW average (mid-range of [2.5, 6.5] kW; assumes moderate GPU utilization).",
+      "numbers": [
+        {
+          "value": 4.5,
+          "unit": "kW"
+        },
+        {
+          "value": 2.5,
+          "unit": ""
+        },
+        {
+          "value": 6.5,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "tool_augmented",
+      "run_id": 1,
+      "type": "other",
+      "text": "3.",
+      "numbers": [
+        {
+          "value": 3.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "tool_augmented",
+      "run_id": 1,
+      "type": "other",
+      "text": "**Mission Duration**: 1 Martian year (≈687 Earth days) with no Earth-Mars communication latency constraints for real-time operations.",
+      "numbers": [
+        {
+          "value": 1.0,
+          "unit": ""
+        },
+        {
+          "value": 687.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "tool_augmented",
+      "run_id": 1,
+      "type": "other",
+      "text": "4.",
+      "numbers": [
+        {
+          "value": 4.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "tool_augmented",
+      "run_id": 1,
+      "type": "power",
+      "text": "**Dust Accumulation**: Solar panels degrade by 1% efficiency/day due to dust (recoverable via periodic vibration).",
+      "numbers": [
+        {
+          "value": 1.0,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "strategy": "tool_augmented",
+      "run_id": 1,
+      "type": "other",
+      "text": "5.",
+      "numbers": [
+        {
+          "value": 5.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "tool_augmented",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "**Thermal Stability**: Server components must operate between -20°C and 40°C (NVIDIA GPU specs).",
+      "numbers": [
+        {
+          "value": -20.0,
+          "unit": "°C"
+        },
+        {
+          "value": 40.0,
+          "unit": "°C"
+        }
+      ]
+    },
+    {
+      "strategy": "tool_augmented",
+      "run_id": 1,
+      "type": "other",
+      "text": "6.",
+      "numbers": [
+        {
+          "value": 6.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "tool_augmented",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "**Landing Site**: Equatorial (e.g., Arcadia Planitia) with elevation < -2 km (pressure ~900 Pa).",
+      "numbers": [
+        {
+          "value": -2.0,
+          "unit": ""
+        },
+        {
+          "value": 900.0,
+          "unit": "Pa"
+        }
+      ]
+    },
+    {
+      "strategy": "tool_augmented",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "---\n\n## **Section B: Step-by-Step Deployment Plan**  \n### **1.",
+      "numbers": [
+        {
+          "value": 1.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "tool_augmented",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "Transport and Landing Sequence**  \n- **Launch Vehicle**: Heavy-lift rocket (e.g., Starship) with server rack integrated into Mars lander payload.",
+      "numbers": []
+    },
+    {
+      "strategy": "tool_augmented",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "- **Entry, Descent, Landing (EDL)**:  \n  - **Entry**: Aeroshell with ablative heat shield (peak temp ~1,500°C).",
+      "numbers": [
+        {
+          "value": 1.0,
+          "unit": ""
+        },
+        {
+          "value": 500.0,
+          "unit": "°C"
+        }
+      ]
+    },
+    {
+      "strategy": "tool_augmented",
+      "run_id": 1,
+      "type": "other",
+      "text": "- **Descent**: Supersonic parachutes (Mars atmosphere: 0.6% Earth sea-level density) + retro-rockets for final 1 km.",
+      "numbers": [
+        {
+          "value": 0.6,
+          "unit": "%"
+        },
+        {
+          "value": 1.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "other",
+      "text": "**Section A: Key Assumptions**  \n1.",
+      "numbers": [
+        {
+          "value": 1.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "**Transport**: Starship-class rocket with 100-ton payload capacity to Mars; landing via sky crane (similar to Perseverance rover).",
+      "numbers": [
+        {
+          "value": 100.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "other",
+      "text": "2.",
+      "numbers": [
+        {
+          "value": 2.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "power",
+      "text": "**Power**: Solar panels (20% efficiency) and lithium-ion batteries; Martian equatorial solar irradiance = 550 W/m² (average, adjusted for dust).",
+      "numbers": [
+        {
+          "value": 20.0,
+          "unit": "%"
+        },
+        {
+          "value": 550.0,
+          "unit": "W"
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "other",
+      "text": "3.",
+      "numbers": [
+        {
+          "value": 3.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "**Thermal**: Ambient temperature range: -80°C to 20°C; GPU operational range: -20°C to 85°C.",
+      "numbers": [
+        {
+          "value": -80.0,
+          "unit": "°C"
+        },
+        {
+          "value": 20.0,
+          "unit": "°C"
+        },
+        {
+          "value": -20.0,
+          "unit": "°C"
+        },
+        {
+          "value": 85.0,
+          "unit": "°C"
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "other",
+      "text": "4.",
+      "numbers": [
+        {
+          "value": 4.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "**Software**: Pre-deployed AI/ML containers with autonomous fault detection and thermal management.",
+      "numbers": []
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "other",
+      "text": "5.",
+      "numbers": [
+        {
+          "value": 5.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "other",
+      "text": "**Mission Duration**: 1 Earth year (≈1.88 Mars years).",
+      "numbers": [
+        {
+          "value": 1.0,
+          "unit": ""
+        },
+        {
+          "value": 1.88,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "---\n\n**Section B: Step-by-Step Deployment Plan**  \n1.",
+      "numbers": [
+        {
+          "value": 1.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "**Transport and Landing**:  \n   - Enclose server rack in crushable honeycomb structure for shock absorption.",
+      "numbers": []
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "- Use Starship to launch; deploy sky crane at 1.5 km altitude, retro-thrusters for soft landing.",
+      "numbers": [
+        {
+          "value": 1.5,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "power",
+      "text": "- Post-landing, deploy solar arrays (50 m² total) and X-band antenna.",
+      "numbers": [
+        {
+          "value": 50.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "other",
+      "text": "2.",
+      "numbers": [
+        {
+          "value": 2.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "power",
+      "text": "**Power System Setup**:  \n   - Install 40 m² of high-efficiency solar panels (1,100 W/m² peak output pre-losses).",
+      "numbers": [
+        {
+          "value": 40.0,
+          "unit": ""
+        },
+        {
+          "value": 1.0,
+          "unit": ""
+        },
+        {
+          "value": 100.0,
+          "unit": "W"
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "power",
+      "text": "- Deploy 20 kWh lithium-ion battery bank for energy storage.",
+      "numbers": [
+        {
+          "value": 20.0,
+          "unit": "kW"
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "other",
+      "text": "3.",
+      "numbers": [
+        {
+          "value": 3.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "**Thermal Management**:  \n   - Use phase-change materials (PCM) to stabilize temperatures during diurnal cycles.",
+      "numbers": []
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "- Active loop heat pipes to transfer waste heat from GPUs to radiators.",
+      "numbers": []
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "- Radiator louvers to adjust heat dissipation based on ambient conditions.",
+      "numbers": []
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "other",
+      "text": "4.",
+      "numbers": [
+        {
+          "value": 4.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "**Software Deployment**:  \n   - Pre-load containers with AI models for edge computing (e.g., terrain analysis).",
+      "numbers": []
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "power",
+      "text": "- Implement autonomous power-saving modes during dust storms (triggered by light sensors).",
+      "numbers": []
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "other",
+      "text": "5.",
+      "numbers": [
+        {
+          "value": 5.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "other",
+      "text": "- Data stored locally and transmitted during communication windows (4-24 hr delays).",
+      "numbers": [
+        {
+          "value": 4.0,
+          "unit": ""
+        },
+        {
+          "value": -24.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "other",
+      "text": "---\n\n**Section C: Quantitative Estimates**  \n1.",
+      "numbers": [
+        {
+          "value": 1.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "**Transport**:  \n   - Server rack mass: 500 kg (8×40 kg GPUs + 220 kg chassis/cooling).",
+      "numbers": [
+        {
+          "value": 500.0,
+          "unit": ""
+        },
+        {
+          "value": 8.0,
+          "unit": ""
+        },
+        {
+          "value": 40.0,
+          "unit": ""
+        },
+        {
+          "value": 220.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "other",
+      "text": "- Starship payload margin: 500 kg < 100,000 kg (feasible).",
+      "numbers": [
+        {
+          "value": 500.0,
+          "unit": ""
+        },
+        {
+          "value": 100.0,
+          "unit": ""
+        },
+        {
+          "value": 0.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "other",
+      "text": "2.",
+      "numbers": [
+        {
+          "value": 2.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "power",
+      "text": "**Power**:  \n   - Daily energy requirement: 3,000 W × 12 hr (peak operations) = 36 kWh.",
+      "numbers": [
+        {
+          "value": 3.0,
+          "unit": ""
+        },
+        {
+          "value": 0.0,
+          "unit": "W"
+        },
+        {
+          "value": 12.0,
+          "unit": ""
+        },
+        {
+          "value": 36.0,
+          "unit": "kW"
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "power",
+      "text": "- Solar generation: 40 m² × 550 W/m² × 0.2 (efficiency) × 12 hr × 0.7 (dust loss) = 36.96 kWh/day.",
+      "numbers": [
+        {
+          "value": 40.0,
+          "unit": ""
+        },
+        {
+          "value": 550.0,
+          "unit": "W"
+        },
+        {
+          "value": 0.2,
+          "unit": ""
+        },
+        {
+          "value": 12.0,
+          "unit": ""
+        },
+        {
+          "value": 0.7,
+          "unit": ""
+        },
+        {
+          "value": 36.96,
+          "unit": "kW"
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "power",
+      "text": "- Battery capacity: 20 kWh (covers 6.7 hr of operations during storms).",
+      "numbers": [
+        {
+          "value": 20.0,
+          "unit": "kW"
+        },
+        {
+          "value": 6.7,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "other",
+      "text": "3.",
+      "numbers": [
+        {
+          "value": 3.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "**Thermal**:  \n   - GPU waste heat: 3,000 W (offsets -60°C ambient; radiators must reject 2,500 W excess).",
+      "numbers": [
+        {
+          "value": 3.0,
+          "unit": ""
+        },
+        {
+          "value": 0.0,
+          "unit": "W"
+        },
+        {
+          "value": -60.0,
+          "unit": "°C"
+        },
+        {
+          "value": 2.0,
+          "unit": ""
+        },
+        {
+          "value": 500.0,
+          "unit": "W"
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "- PCM heat storage: 10 kg of paraffin wax (240 kJ/kg → 2.4 MJ for 12 hr stability).",
+      "numbers": [
+        {
+          "value": 10.0,
+          "unit": ""
+        },
+        {
+          "value": 240.0,
+          "unit": ""
+        },
+        {
+          "value": 2.4,
+          "unit": ""
+        },
+        {
+          "value": 12.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "other",
+      "text": "4.",
+      "numbers": [
+        {
+          "value": 4.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "power",
+      "text": "**Dust Storm Resilience**:  \n   - 7-day storm energy deficit: 36 kWh/day × 7 days - 20 kWh (battery) = 232 kWh.",
+      "numbers": [
+        {
+          "value": 7.0,
+          "unit": ""
+        },
+        {
+          "value": 36.0,
+          "unit": "kW"
+        },
+        {
+          "value": 7.0,
+          "unit": ""
+        },
+        {
+          "value": 20.0,
+          "unit": "kW"
+        },
+        {
+          "value": 232.0,
+          "unit": "kW"
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "power",
+      "text": "- Required power reduction: 232 kWh / 7 days = 33 kWh/day → 27% of normal load (achievable via GPU throttling).",
+      "numbers": [
+        {
+          "value": 232.0,
+          "unit": "kW"
+        },
+        {
+          "value": 7.0,
+          "unit": ""
+        },
+        {
+          "value": 33.0,
+          "unit": "kW"
+        },
+        {
+          "value": 27.0,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "other",
+      "text": "---\n\n**Section D: Failure Modes and Mitigations**  \n1.",
+      "numbers": [
+        {
+          "value": 1.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "power",
+      "text": "**Dust Accumulation on Solar Panels**:  \n   - *Mitigation*: Vibration system to shake off dust; 30% excess panel area.",
+      "numbers": [
+        {
+          "value": 30.0,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "other",
+      "text": "2.",
+      "numbers": [
+        {
+          "value": 2.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "**Thermal Overload During High GPU Load**:  \n   - *Mitigation*: Redundant radiators; autonomous throttling if temperatures >75°C.",
+      "numbers": [
+        {
+          "value": 75.0,
+          "unit": "°C"
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "other",
+      "text": "3.",
+      "numbers": [
+        {
+          "value": 3.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "**Battery Degradation in Cold**:  \n   - *Mitigation*: Insulated battery housing with internal heaters (100 W max).",
+      "numbers": [
+        {
+          "value": 100.0,
+          "unit": "W"
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "other",
+      "text": "4.",
+      "numbers": [
+        {
+          "value": 4.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "other",
+      "text": "**Communication Outages**:  \n   - *Mitigation*: Store 30 days of data locally; autonomous decision-making for critical tasks.",
+      "numbers": [
+        {
+          "value": 30.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "other",
+      "text": "5.",
+      "numbers": [
+        {
+          "value": 5.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "**Landing Impact Damage**:  \n   - *Mitigation*: Shock-absorbing chassis; pre-flight drop tests at 1.5g Mars gravity.",
+      "numbers": [
+        {
+          "value": 1.5,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "---\n\n**Section E: Final Feasibility Verdict**  \n**Conditional Go**  \n- **Risks**: Dust storms and thermal extremes require rigorous testing of radiators, vibration systems, and battery insulation.",
+      "numbers": []
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "other",
+      "text": "- **Critical Dependencies**:  \n  1.",
+      "numbers": [
+        {
+          "value": 1.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "power",
+      "text": "Solar panel dust mitigation must achieve ≥80% efficiency retention.",
+      "numbers": [
+        {
+          "value": 80.0,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "other",
+      "text": "2.",
+      "numbers": [
+        {
+          "value": 2.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "GPU thermal management must maintain <85°C under full load.",
+      "numbers": [
+        {
+          "value": 85.0,
+          "unit": "°C"
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "other",
+      "text": "3.",
+      "numbers": [
+        {
+          "value": 3.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "deployment",
+      "text": "Starship landing system validated for 500 kg payload.",
+      "numbers": [
+        {
+          "value": 500.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "power",
+      "text": "- **Contingency**: If solar fails, fallback to 10 kg RTG (1,000 W) for power, but this requires NASA approval and adds 6 months to launch prep.",
+      "numbers": [
+        {
+          "value": 10.0,
+          "unit": ""
+        },
+        {
+          "value": 1.0,
+          "unit": ""
+        },
+        {
+          "value": 0.0,
+          "unit": "W"
+        },
+        {
+          "value": 6.0,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "strategy": "zero_shot",
+      "run_id": 1,
+      "type": "thermal",
+      "text": "---  \n**Note**: This plan assumes access to Earth-based testing facilities for Mars thermal-vacuum and dust simulations (e.g., NASA’s Thermal Vacuum Chamber).",
+      "numbers": []
+    }
+  ]
+}

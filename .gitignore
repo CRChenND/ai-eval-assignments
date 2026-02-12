@@ -1,0 +1,11 @@
+.env
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Module 2 generated outputs
+Module 2/.venv/

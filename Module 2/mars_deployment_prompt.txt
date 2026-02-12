@@ -1,0 +1,17 @@
+You are a mission systems engineer tasked with planning deployment of an 8-GPU NVIDIA server rack at a Martian equatorial site.
+
+Produce a technical plan with explicit assumptions and quantitative checks.
+
+You must cover:
+1) Transport and landing sequence
+2) Power system sizing for continuous operation
+3) Thermal management under Martian atmosphere
+4) Software deployment and operations
+5) Risks, mitigations, and fallback modes
+
+Output format:
+- Section A: Key assumptions
+- Section B: Step-by-step deployment plan
+- Section C: Quantitative estimates (with units)
+- Section D: Failure modes and mitigations
+- Section E: Final feasibility verdict (Go / Conditional Go / No-Go)
