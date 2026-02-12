@@ -11,6 +11,8 @@ ITER_MODEL="${ITER_MODEL:-qwen/qwen3-32b}"
 REASON_MODEL="${REASON_MODEL:-qwen/qwq-32b}"
 TOOL_MODEL="${TOOL_MODEL:-qwen/qwen3-32b}"
 ITER_RUNS="${ITER_RUNS:-5}"
+ZERO_MAX_TOKENS="${ZERO_MAX_TOKENS:-4000}"
+COT_MAX_TOKENS="${COT_MAX_TOKENS:-4000}"
 SKIP_SYNC="${SKIP_SYNC:-0}"
 
 if [[ -f "${ROOT_DIR}/.env" ]]; then
@@ -36,10 +38,10 @@ else
 fi
 
 echo "[2/9] generate_zero_shot.py"
-uv run python generate_zero_shot.py --model "${ZERO_MODEL}"
+uv run python generate_zero_shot.py --model "${ZERO_MODEL}" --max-tokens "${ZERO_MAX_TOKENS}"
 
 echo "[3/9] generate_cot.py"
-uv run python generate_cot.py --model "${COT_MODEL}"
+uv run python generate_cot.py --model "${COT_MODEL}" --max-tokens "${COT_MAX_TOKENS}"
 
 echo "[4/9] generate_iterative.py"
 uv run python generate_iterative.py --model "${ITER_MODEL}" --runs "${ITER_RUNS}"

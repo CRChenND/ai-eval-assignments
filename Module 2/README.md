@@ -3,7 +3,7 @@
 ## 0) Setup
 
 ```bash
-cd "/Users/chaoranchen/Documents/GitHub/ai-eval-assignments"
+cd /path/to/ai-eval-assignments
 set -a
 source .env
 set +a
@@ -48,24 +48,8 @@ Optional overrides:
 
 ```bash
 ITER_RUNS=3 REASON_MODEL="qwen/qwen3-32b" ./run_all.sh
+ZERO_MAX_TOKENS=5000 COT_MAX_TOKENS=5000 ./run_all.sh
 SKIP_SYNC=1 ./run_all.sh
-```
-
-## Re-run specific strategies with higher token budget
-
-```bash
-set -a; source ../.env; set +a
-uv run python generate_zero_shot.py --model "qwen/qwen3-32b" --max-tokens 4000
-uv run python generate_cot.py --model "qwen/qwen3-32b" --max-tokens 4000
-```
-
-Then refresh metrics/plots:
-
-```bash
-uv run python extract_claims.py
-uv run python fact_check.py
-uv run python analyze_results.py
-uv run python plot_results.py
 ```
 
 ## Update report after rerun
