@@ -222,6 +222,34 @@ Tool-augmented & 7 & 1 & 3 & 2 & 1 \\
 
 Power-related numerical claims were the dominant failure mode in zero-shot, chain-of-thought, prompt-iteration, and reasoning-focused outputs.
 
+\subsection{Qualitative Error Analysis (Empirical Cases)}
+
+To complement aggregate metrics, we include representative hallucination cases from the rule-based audit. To reduce cherry-picking risk, cases were selected with a fixed protocol: (i) keep \texttt{verdict=hallucinated} entries from \texttt{fact\_check.json}, (ii) retain semantically aligned claim--reference pairs (e.g., surface insolation claims checked against surface insolation bounds), (iii) prioritize by operational risk (power sizing first), and (iv) report cross-strategy diversity.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{|p{2.2cm}|p{4.3cm}|p{2.2cm}|p{3.2cm}|p{3.2cm}|}
+\hline
+Strategy & Claim excerpt (model output) & Reference bound & Why flagged as hallucination & Operational impact \\
+\hline
+Zero-shot & ``Martian equatorial solar irradiance = 550 W/m$^2$'' (surface context) & Surface noon insolation: 200--450 W/m$^2$ & Overestimates surface-available power for sizing assumptions & Undersized storage / overconfident continuous operation planning \\
+\hline
+Chain-of-thought & ``8 $\times$ H100 ... 2.4 kW total'' for full rack continuous operation & 8-GPU rack power: 2.5--6.5 kW & Below evaluated lower bound for full-system rack budget & Cascading underestimation of daily energy and radiator requirements \\
+\hline
+Prompt iteration & ``Solar irradiance: 590 W/m$^2$ (equatorial average)'' in surface power sizing & Surface noon insolation: 200--450 W/m$^2$ & Uses near-TOA value as surface planning input & Solar array area is under-sized, reducing dust-season reliability margin \\
+\hline
+Reasoning model & ``Solar irradiance: 590 W/m$^2$ at equator'' with solar augmentation sizing & Surface noon insolation: 200--450 W/m$^2$ & Same surface-resource inflation in quantitative design path & Overstates redundant generation capability during degraded conditions \\
+\hline
+Tool-augmented & ``Server components must operate between -20$^\circ$C and 40$^\circ$C'' used as environmental adequacy claim & Mars mean surface temp: -65 to -55$^\circ$C & Confuses hardware operating envelope with external climate adequacy & Can hide enclosure/heating requirements if interpreted as direct ambient compatibility \\
+\hline
+\end{tabular}
+\caption{Representative empirical hallucination cases selected by a fixed audit protocol.}
+\label{tab:qual_cases}
+\end{table}
+
+These cases provide concrete failure modes behind Table~\ref{tab:metrics}: most high-impact errors are power-budget hallucinations (resource inflation or load underestimation), with additional thermal framing errors that can mislead enclosure design and survivability analysis.
+
 \subsection{Visual Comparison}
 
 \begin{figure}[h]
