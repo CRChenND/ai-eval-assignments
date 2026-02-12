@@ -6,9 +6,9 @@ Coursework repository for AI evaluation modules.
 
 ```text
 ai-eval-assignments/
-├── Module 1/
+├── Module_1/
 │   └── Module_1.ipynb
-├── Module 2/
+├── Module_2/
 │   ├── assignment.txt
 │   ├── main.tex
 │   ├── pyproject.toml
@@ -22,17 +22,17 @@ ai-eval-assignments/
 
 ## Progress
 
-- `Module 1`: Completed
-- `Module 2`: Implemented and analyzed
-  - Assignment prompt: `Module 2/assignment.txt`
-  - Final report: `Module 2/main.tex`
-  - Pipeline guide: `Module 2/README.md`
+- `Module_1`: Completed
+- `Module_2`: Implemented and analyzed
+  - Assignment prompt: `Module_2/assignment.txt`
+  - Final report: `Module_2/main.tex`
+  - Pipeline guide: `Module_2/README.md`
 
-## Quick Start (Module 2)
+## Quick Start (Module_2)
 
 ```bash
-cd "Module 2"
+cd "Module_2"
 ./run_all.sh
 ```
 
-For full usage and customization, see `Module 2/README.md`.
+For full usage and customization, see `Module_2/README.md`.

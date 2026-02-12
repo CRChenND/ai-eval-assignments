@@ -7,5 +7,5 @@ __pycache__/
 *.pyo
 *.pyd
 
-# Module 2 generated outputs
-Module 2/.venv/
+# Module_2 generated outputs
+Module_2/.venv/

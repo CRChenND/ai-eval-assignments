@@ -8,7 +8,7 @@ set -a
 source .env
 set +a
 
-cd "Module 2"
+cd "Module_2"
 uv sync
 ```
 
